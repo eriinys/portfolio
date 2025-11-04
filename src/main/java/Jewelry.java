@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class Jewelry extends FixedAsset{
+    private double karat;
 
-public class Jewelry {
+    public Jewelry(double karat,  String name, double marketValue){
+        super(name, marketValue);
+        this.karat = karat;
+    }
+
+    public double getValue(){
+        return 0;
+    }
 }

@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+public class CreditCard implements Valuable {
 
-public class CreditCard {
+    @Override
+    public double getValue(){
+        return 0;
+    }
+
 }
