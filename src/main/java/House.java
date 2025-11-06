@@ -15,4 +15,7 @@ public class House extends FixedAsset {
         double value = 0;
         return value;
     }
+
+
+
 }

@@ -1,8 +1,25 @@
 public class CreditCard implements Valuable {
+    String name;
+    String accountNumber;
+    double balance;
+
+    public CreditCard(String name, String accountNumber, double balance) {
+        this.name = name;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+
+    public void loan (double amount){
+        balance += amount;
+    }
+
+    public void pay (double amount){
+        balance -= amount;
+    }
 
     @Override
     public double getValue(){
-        return 0;
+        return balance;
     }
 
 }

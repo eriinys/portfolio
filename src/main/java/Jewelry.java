@@ -7,6 +7,13 @@ public class Jewelry extends FixedAsset{
     }
 
     public double getValue(){
-        return 0;
+        return marketValue;
     }
+
+    @Override
+    public String toString(){
+        String v = String.format("%s, %.2f", name, getValue());
+        return v;
+    }
+
 }
